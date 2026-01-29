@@ -31,18 +31,20 @@ header{
 
 /* IMAGEN SUPERIOR */
 .imagen-superior{
-    text-align:center;
-    margin:30px 0;
-}
-
-.imagen-superior video,
-.imagen-superior img{
-    width:70%;
+    width:100%;
     max-width:500px;
+    margin:30px auto;
     height:280px;
-    object-fit:cover;
+    overflow:hidden;
     border-radius:15px;
     border:3px solid #d4af37;
+}
+
+.imagen-superior img,
+.imagen-superior video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 /* CONTENIDO */
@@ -55,25 +57,24 @@ section{
     gap:20px;
 }
 
+/* LATERALES */
 .lateral{
     width:20%;
+    height:280px;
     background-color:#e3f2fd;
     border:3px solid #d4af37;
     border-radius:15px;
-    padding:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    overflow:hidden;
 }
 
-.lateral video,
-.lateral img{
+.lateral img,
+.lateral video{
     width:100%;
-    height:200px;
+    height:100%;
     object-fit:cover;
-    border-radius:10px;
 }
 
+/* CENTRO */
 .centro{
     width:60%;
     background:white;
@@ -92,12 +93,12 @@ section{
 }
 
 .paz-item{
-    text-align:center;
     width:180px;
+    text-align:center;
 }
 
-.paz-item video,
-.paz-item img{
+.paz-item img,
+.paz-item video{
     width:100%;
     height:120px;
     object-fit:cover;
@@ -133,40 +134,39 @@ section{
 <!-- IMAGEN SUPERIOR -->
 <div class="imagen-superior">
     <video autoplay muted loop>
-        <source src="file:///C:/Users/arqlu/Downloads/Video1.mp4" type="video/mp4">
+        <source src="Video1 (3).mp4" type="video/mp4">
     </video>
 </div>
 
 <section>
-
     <div class="contenedor">
 
         <!-- LATERAL IZQUIERDO -->
         <div class="lateral">
             <video autoplay muted loop>
-                <source src="file:///C:/Users/arqlu/Downloads/Video4.mp4" type="video/mp4">
+                <source src="Video4 (1).mp4" type="video/mp4">
             </video>
         </div>
 
         <!-- TEXTO -->
         <div class="centro">
             <p>
-El papa Francisco cree en una Iglesia cercana a las personas, especialmente a quienes más lo necesitan. Su mensaje se basa en la humildad, la sencillez y el amor al prójimo. Promueve valores como la solidaridad, el respeto y la justicia, e invita a las personas a vivir con compasión y esperanza. También llama a cuidar el planeta, a construir la paz y a dialogar con quienes piensan diferente, buscando un mundo más justo y fraterno.
+El papa Francisco cree en una Iglesia cercana a las personas, especialmente a quienes más lo necesitan. Su mensaje se basa en la humildad, la sencillez y el amor al prójimo. Promueve valores como la solidaridad, el respeto y la justicia, e invita a vivir con compasión y esperanza.
             </p>
 
             <p>
-En esta página se presentan los logros y proyectos del papa Francisco, donde se destacan sus esfuerzos por promover la paz, la justicia social y el cuidado del planeta. Además, se muestra su compromiso con una Iglesia más cercana, solidaria y atenta a las necesidades de las personas.
+En esta página se presentan los logros y proyectos del papa Francisco, destacando sus esfuerzos por promover la paz, la justicia social y el cuidado del planeta, así como su compromiso con una Iglesia más solidaria y cercana.
             </p>
 
             <p>
-En esta página se ofrece una introducción general al papa Francisco y a los valores que guían su misión, resaltando su mensaje de humildad, servicio, respeto y compromiso con un mundo más humano.
+Aquí se ofrece una introducción general a los valores que guían su misión: humildad, servicio, respeto y compromiso con un mundo más humano.
             </p>
         </div>
 
         <!-- LATERAL DERECHO -->
         <div class="lateral">
             <video autoplay muted loop>
-                <source src="file:///C:/Users/arqlu/Downloads/Video4.mp4" type="video/mp4">
+                <source src="Video4 (1).mp4" type="video/mp4">
             </video>
         </div>
 
@@ -178,19 +178,19 @@ En esta página se ofrece una introducción general al papa Francisco y a los va
 
     <div class="paz-item">
         <video autoplay muted loop>
-            <source src="file:///C:/Users/arqlu/Downloads/Video5.mp4" type="video/mp4">
+            <source src="Video3 (1).mp4" type="video/mp4">
         </video>
         <button onclick="irAPagina('index.html')">P</button>
     </div>
 
     <div class="paz-item">
-        <img src="file:///C:/Users/arqlu/Downloads/Video2.jpg" alt="Imagen A">
-        <button onclick="irAPagina('logros.html')">A</button>
+        <img src="https://www.hola.com/horizon/square/589209db7a3c-gettyimages-1288088474.jpg" alt="Imagen A">
+        <button onclick="irAPagina('info.html')">A</button>
     </div>
 
     <div class="paz-item">
         <video autoplay muted loop>
-            <source src="file:///C:/Users/arqlu/Downloads/Video3.mp4" type="video/mp4">
+            <source src="Video5 (1).mp4" type="video/mp4">
         </video>
         <button onclick="irAPagina('biografia.html')">Z</button>
     </div>
@@ -205,3 +205,4 @@ function irAPagina(pagina){
 
 </body>
 </html>
+
